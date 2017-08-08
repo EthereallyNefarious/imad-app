@@ -12,7 +12,7 @@ button.onclick = function () {
             if(request.status===200){
                 var counter = request.responseText;
                 var span =document.getElementById('count');
-                span innerHTML = counter.toString();
+                 span innerHTML = counter.toString();
             }
         }
         //Not done yet
@@ -20,6 +20,4 @@ button.onclick = function () {
     //Make the request
 request.open('GET','http://navinthomsy37.imad.hasura-app.io/counter', true);
 request.send(null);
-
-    
 };
